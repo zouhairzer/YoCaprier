@@ -17,5 +17,5 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: 62.72.37.105
-          username: u820736800.zerzkhan1949
-          password: ZERZkhan1949
+          username: u820736800.zerzkhane49
+          password: ZERZKHane2@11
