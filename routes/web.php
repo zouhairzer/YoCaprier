@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -65,7 +66,7 @@ Route::get('/update-product/{id}',[ProductController::class,'get_products']);
 
 Route::post('/update/product',[ProductController::class,'update_products']);
 
-// Route::get('/search',[ProductController::class,'search']);
+Route::get('/search',[ProductController::class,'search_product']);
 
 //////////////////////////////////////////// Categories ////////////////////////////////////////////////
 
@@ -82,3 +83,8 @@ Route::get('/delete-category/{id}',[CategoryController::class,'delete_category']
 Route::get('/update-category/{id}',[CategoryController::class,'get_category']);
 
 Route::post('/update/category',[CategoryController::class,'update_category']);
+
+//////////////////////////////////////////// Users ////////////////////////////////////////////////
+
+Route::get('/Users',[UserController::class,'AfficherUsers']);
+

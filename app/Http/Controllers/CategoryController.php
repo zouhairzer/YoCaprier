@@ -85,4 +85,5 @@ class CategoryController extends Controller
             return redirect()->back()->with('Nodelete','Suppression à réussie');
         }
     }
+
 }

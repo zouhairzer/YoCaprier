@@ -106,10 +106,14 @@ class ProductController extends Controller
     }
 
 
-    // public function search(Request $request)
-    // {
-    //     $query = $request->input('search-product');
-    //     $prodcuts = Product::where('name','like','%%')->get();
-    //     return view('admin.product.Products', compact('prodcuts'));
-    // }
+    public function search_product(Request $request)
+    {
+        $name = $request->input('search-product');
+        $products = DB::table('products')->join('categories', 'products.category_id', 'categories.id')
+                                         ->select('products.*', 'categories.name as category', 'categories.id as category_id')
+                                         ->where('products.name', 'like', "%$name%")
+                                         ->get();
+        // dd($prodcuts);
+        return view('admin.product.Products', compact('products'));
+    }
 }

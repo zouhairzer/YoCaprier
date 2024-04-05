@@ -235,6 +235,14 @@
 						</div>
 					</a>
 				</li>
+                <li class="nav-item">
+                    <a class="nav-link  " href="/Users">
+						<div class="d-flex align-items-center">
+							<span class="nav-link-icon"><i class="bi bi-people"></i></span>
+							<span class="nav-link-text">Customers</span>
+						</div>
+					</a>
+                </li>
 				<li class="nav-item">
 					<a
 						class="nav-link  collapsed "

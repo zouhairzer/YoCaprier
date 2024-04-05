@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Register Page</title>
+   <title>Register Page</title> 
    <!-- Bootstrap CSS -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
    <!-- Font Awesome CSS -->
@@ -67,7 +67,7 @@
 					   	<input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Enter Password" required />
 					   	<div class="invalid-feedback">Please Confirm password.</div>
 					   </div>
-   
+
 					   <button type="submit" class="btn btn-success">Sign Up</button>
 				   </form>
             </div>
